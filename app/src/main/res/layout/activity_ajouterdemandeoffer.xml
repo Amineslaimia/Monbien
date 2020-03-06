@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ajouterdemandeoffer">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Ajouter offre ou demande"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:onClick="clickhome"
+            app:srcCompat="@drawable/arrow" />
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="#e69317"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="clickshowoffersoptions">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Ajouter une offre"
+                        android:layout_centerInParent="true"
+                        android:textColor="#ffff"
+                        android:textSize="18dp" />
+                    <ImageView
+
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/downarrow" />
+
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/offervente"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/menusuboption2"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginBottom="-1dp"
+                    android:onClick="clickajouterofferlocation"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textColor="@color/colorPrimary">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Location"
+                        android:textColor="#ffff"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/offerlocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/menusuboption2"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="clickajouteroffervente"
+                    android:layout_marginTop="-1dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textColor="@color/colorPrimary">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Vente"
+                        android:textColor="#ffff"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/menuoption1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="clickshowdemandsoptions">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Ajouter une demande"
+                        android:layout_centerInParent="true"
+                        android:textColor="#ffff"
+                        android:textSize="18dp"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/downarrow" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/demandelocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/menusuboption1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="clickajouterdemandeachat"
+                    android:layout_marginBottom="-1dp"
+                    android:orientation="horizontal"
+                    android:textColor="@color/colorPrimary">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Achat"
+                        android:textColor="#ffff"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/demandeachat"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/menusuboption1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="clickajouterdemandelocation"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginBottom="-1dp"
+                    android:orientation="horizontal"
+                    android:textColor="@color/colorPrimary">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="location"
+                        android:textColor="#ffff"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/demanderesi"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:onClick="clickajouterdemanderesidence"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:layout_marginTop="-1dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/menusuboption1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:textColor="@color/colorPrimary">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Résidence"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

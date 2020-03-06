@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "885752820799",
+    "firebase_url": "https://monbiendb.firebaseio.com",
+    "project_id": "monbiendb",
+    "storage_bucket": "monbiendb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885752820799:android:e14170c317936ad0",
+        "android_client_info": {
+          "package_name": "com.example.amine.monbien"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885752820799-vmpi0obtqphtege4pluaaf1e0ha6lsp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amine.monbien",
+            "certificate_hash": "dbdd81b7d5883e81440dd48f7adc40f1bf9cf53c"
+          }
+        },
+        {
+          "client_id": "885752820799-i4rgkg3h5obuve9kdniqb9drnr6jdvla.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "885752820799-i4rgkg3h5obuve9kdniqb9drnr6jdvla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdC69XrONfilAPM9Ng5JC3484ecwJwHeQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885752820799-i4rgkg3h5obuve9kdniqb9drnr6jdvla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
